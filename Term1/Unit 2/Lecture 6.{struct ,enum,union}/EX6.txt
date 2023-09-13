@@ -1,0 +1,30 @@
+#include <stdio.h> 
+union job{ //defining a union 
+           char name[32]; 
+           float salary;
+           int worker_no;
+}u;
+struct jobl { 
+           char name[32];
+           float salary; 
+           int worker_no; 
+}s; 
+int main()
+{ 
+printf("size of union =%d \n,sizeof(u)");
+printf("\nsize of structure = %d", sizeof(s));
+ return 0;
+}
+=======================================================
+=======================================================
+output of this code>>>>>>>>> 
+
+     32
+     40
+=======================================================
+=======================================================
+
+
+
+
+ 
