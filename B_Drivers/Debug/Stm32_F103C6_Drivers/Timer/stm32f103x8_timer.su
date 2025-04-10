@@ -1,0 +1,8 @@
+stm32f103x8_timer.c:20:6:TIM_Init	16	static
+stm32f103x8_timer.c:60:6:TIM_Start	16	static
+stm32f103x8_timer.c:79:6:TIM_Stop	16	static
+stm32f103x8_timer.c:98:6:TIM_SetCallback	16	static
+stm32f103x8_timer.c:127:6:TIM1_UP_IRQHandler	8	static
+stm32f103x8_timer.c:140:6:TIM2_IRQHandler	8	static
+stm32f103x8_timer.c:152:6:TIM3_IRQHandler	8	static
+stm32f103x8_timer.c:164:6:TIM4_IRQHandler	8	static
