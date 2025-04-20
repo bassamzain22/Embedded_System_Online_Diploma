@@ -1,0 +1,4 @@
+stm32_F103C6_EXTI_driver.c:41:6:NVIC__EXTI_IRQ_ENABLE	16	static
+stm32_F103C6_EXTI_driver.c:100:6:NVIC__EXTI_IRQ_DISABLE	16	static
+stm32_F103C6_EXTI_driver.c:158:6:MCAL_EXTI_DEInit	4	static
+stm32_F103C6_EXTI_driver.c:189:6:MCAL_EXTI_Init	32	static
