@@ -1,49 +1,42 @@
-/**
- ******************************************************************************
- * @file           : main.c
- * @author         : bassam zain
- * @brief          :
- ******************************************************************************
- */
-#include "stm32_speed_DRIVER.h"
+
 #include "STM32_TIMERS_DRIVER.h"
-#include "Motor_L298N.h"
+#include "stm32_F103C6_gpio_driver.h"
 #include "stm32f103c6_ISR_DRIVER.h"
-//===================================
-#define clk 36000000
+#include "Ultrasonic_driver.h"
+#include "Motor_L298N.h"
+#include <stdio.h>
 
-uint32_t speed = 1000; // global to change speed
+#define DISTANCE_THRESHOLD 40  // Distance threshold in cm
+#define LED_DURATION 5000  // 5 seconds in milliseconds
+uint32_t V2_speed  = 1000;
 
 
-int main(void)
-{
+uint32_t current_speed = 700;
 
+
+
+int main() {
+	Ultrasonic_Init();
 	Motors_Init();
+	Set_Speed(current_speed);
 
-	Set_Speed(speed);
-	while(1){
+    while(1) {
+        Move_Forward();
+        uint32_t distance = Get_Distance_Front();
+        speed_increment(&current_speed, V2_speed, distance);
+        delay(3000, U_ms, clk);
+        speed_decrement(&current_speed, V2_speed, distance);
 
-		Move_Forward();
-	    delay(5000, U_ms, clk);
+        delay(3000, U_ms, clk);
 
-		Move_Right();
+        uint32_t Left_distance = Get_Distance_Left();
 
-		delay(5000, U_ms, clk);
+        uint32_t Right_distance = Get_Distance_Right();
 
+        Turn_left(current_speed , Left_distance , Right_distance);
+        delay(3000, U_ms, clk);
+        Turn_right(current_speed , Left_distance , Right_distance);
+        delay(3000, U_ms, clk);
+    }
 
-
-		Motors_Stop();
-		delay(3000, U_ms, clk);
-
-		Move_Left();
-		delay(5000, U_ms, clk);
-
-		Move_Backward();
-		delay(5000, U_ms, clk);
-
-
-
-			//===========================================================
-
-	}
 }

@@ -1,4 +1,4 @@
-/*
+/*s
  * Motor_L298N.h
  *
  *  Created on:
@@ -19,9 +19,13 @@ void Move_Forward(void);
 void Move_Backward(void);
 void Move_Left(void);
 void Move_Right(void);
+void Motors_Stop(void);
 void speed_increment(uint32_t *current_speed,uint32_t V2_speed , uint32_t distance);
 void speed_decrement(uint32_t *current_speed,uint32_t V2_speed , uint32_t distance);
-void Turn_left(void);
-void Turn_right(void);
-void Motors_Stop(void);
+void speed_increment_distance(uint32_t *current_speed , uint32_t distance);
+void speed_decrement_distance(uint32_t *current_speed , uint32_t distance);
+void Turn_left(uint32_t current_speed , uint32_t Left_distance, uint32_t Right_distance);
+void Turn_right(uint32_t current_speed, uint32_t Left_distance, uint32_t Right_distance);
+void Move_Stop(uint32_t *current_speed , uint32_t distance);
+
 #endif

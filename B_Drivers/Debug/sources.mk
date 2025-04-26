@@ -21,6 +21,7 @@ OBJCOPY_BIN :=
 # Every subdirectory with source files must be described here
 SUBDIRS := \
 HAL/Motor \
+HAL/Ultrasonic \
 Src \
 Startup \
 Stm32_F103C6_Drivers/EXTI \

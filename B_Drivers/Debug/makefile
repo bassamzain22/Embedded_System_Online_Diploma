@@ -17,6 +17,7 @@ RM := rm -rf
 -include Stm32_F103C6_Drivers/EXTI/subdir.mk
 -include Startup/subdir.mk
 -include Src/subdir.mk
+-include HAL/Ultrasonic/subdir.mk
 -include HAL/Motor/subdir.mk
 -include subdir.mk
 -include objects.mk
