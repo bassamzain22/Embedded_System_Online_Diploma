@@ -1,0 +1,6 @@
+../Core/Src/Ultrasonic.c:23:6:SysTickEnable	4	static,ignoring_inline_asm
+../Core/Src/Ultrasonic.c:30:6:SysTickDisable	4	static,ignoring_inline_asm
+../Core/Src/Ultrasonic.c:37:10:measureDistance	32	static
+../Core/Src/Ultrasonic.c:82:10:get_frontdis	8	static
+../Core/Src/Ultrasonic.c:88:10:get_leftdis	8	static
+../Core/Src/Ultrasonic.c:94:10:get_rightdis	8	static
