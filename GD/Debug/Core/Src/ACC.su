@@ -1,0 +1,13 @@
+../Core/Src/ACC.c:15:6:ACC_Init	8	static
+../Core/Src/ACC.c:36:6:ACC_Enable	16	static
+../Core/Src/ACC.c:53:6:ACC_Disable	8	static
+../Core/Src/ACC.c:65:6:ACC_SetTargetSpeed	16	static
+../Core/Src/ACC.c:76:6:ACC_SetFollowingDistance	16	static
+../Core/Src/ACC.c:85:6:ACC_Update	24	static
+../Core/Src/ACC.c:114:6:ACC_SpeedControl	24	static
+../Core/Src/ACC.c:154:6:ACC_EmergencyBrake	8	static
+../Core/Src/ACC.c:184:6:ACC_SmoothAcceleration	24	static
+../Core/Src/ACC.c:198:6:ACC_SmoothDeceleration	24	static
+../Core/Src/ACC.c:209:13:ACC_GetState	4	static
+../Core/Src/ACC.c:213:10:ACC_GetCurrentSpeed	4	static
+../Core/Src/ACC.c:217:10:ACC_GetFrontDistance	4	static

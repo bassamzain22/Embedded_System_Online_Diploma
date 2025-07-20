@@ -1,6 +1,0 @@
-../Core/Src/Ultrasonic.c:23:6:SysTickEnable	1
-../Core/Src/Ultrasonic.c:30:6:SysTickDisable	1
-../Core/Src/Ultrasonic.c:37:10:measureDistance	11
-../Core/Src/Ultrasonic.c:82:10:get_frontdis	1
-../Core/Src/Ultrasonic.c:88:10:get_leftdis	1
-../Core/Src/Ultrasonic.c:94:10:get_rightdis	1

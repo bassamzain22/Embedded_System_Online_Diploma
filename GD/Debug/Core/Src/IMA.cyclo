@@ -1,0 +1,6 @@
+../Core/Src/IMA.c:19:7:calculateDistance	1
+../Core/Src/IMA.c:34:6:updateLocalVehicleData	3
+../Core/Src/IMA.c:51:6:sendVehicleData	1
+../Core/Src/IMA.c:66:6:checkCollisionRisk	4
+../Core/Src/IMA.c:94:6:displayWarning	5
+../Core/Src/IMA.c:112:6:IMA_Update	11
